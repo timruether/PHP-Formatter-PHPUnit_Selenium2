@@ -8,7 +8,7 @@
     <script type="application/x-javascript" src="chrome://php-formatters/content/formats/php-phpunit-selenium2.js"/>
     <html:script type="application/javascript">
         var ide_api = new API();
-        ide_api.addPlugin("phpformatters@zatsubun.com");
+        ide_api.addPlugin("PHPUnit_Extensions_Selenium2TestCase");
         ide_api.addPluginProvidedFormatter("phpformatters", "PHP / PHPUnit / PHPUnit Selenium2TestCase", "chrome://php-formatters/content/formats/php-phpunit-selenium2.js");
     </html:script>
 </overlay>

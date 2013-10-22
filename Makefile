@@ -5,7 +5,7 @@
 
 ZIP     = /usr/bin/zip
 SRCDIR  = ./src
-XPIFILE = phpformatter@zatsubun.com.xpi
+XPIFILE = PHPUnit_Selenium2TestCase_Formatter.xpi
 
 
 all: $(XPIFILE)
