@@ -471,7 +471,7 @@ WDAPI.Element.prototype.submit = function() {
     return this.ref + "->submit()";
 };
 
-WDAPI.Element.prototype.select = function(label) {
+WDAPI.Element.prototype.select = function(selectLocator) {
 //  if (selectLocator.type == 'index') {
 //    return "Selenium::WebDriver::Support::Select.new(" + this.ref + ").select_by(:index, " + selectLocator.string + ")";
 //  }
@@ -479,7 +479,7 @@ WDAPI.Element.prototype.select = function(label) {
 //    return "Selenium::WebDriver::Support::Select.new(" + this.ref + ").select_by(:value, " + xlateArgument(selectLocator.string) + ")";
 //  }
 //  return "Selenium::WebDriver::Support::Select.new(" + this.ref + ").select_by(:text, " + xlateArgument(selectLocator.string) + ")";
-    return "$this->select(" + this.ref + ")->selectOptionByLabel(" + xlateArgument(label) + ")";
+    return "$this->select(" + this.ref + ")->selectOptionByLabel(" + xlateArgument(selectLocator.string) + ")";
 };
 
 WDAPI.ElementList = function(ref) {
