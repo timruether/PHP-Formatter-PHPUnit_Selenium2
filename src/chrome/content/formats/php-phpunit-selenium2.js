@@ -464,7 +464,7 @@ WDAPI.Element.prototype.isSelected = function() {
 };
 
 WDAPI.Element.prototype.sendKeys = function(text) {
-    return this.ref + "->keys(" + xlateArgument(text, 'args') + ")";
+    return this.ref + "->value(" + xlateArgument(text, 'args') + ")";
 };
 
 WDAPI.Element.prototype.submit = function() {
